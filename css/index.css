@@ -20,6 +20,10 @@
     background-image: url('../assets/section-three.jpg');
 }
 
+#section-four {
+    background-image: url('../assets/section-four.jpg');
+}
+
 #victor-medals {
     border-collapse: unset;
     border-spacing: 2vw;
