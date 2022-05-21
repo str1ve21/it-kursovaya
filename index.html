@@ -36,15 +36,27 @@
 <body class="overflow-hidden">
     <main class="main-cont snap-mandatory scroll-smooth snap-x flex flex-row h-screen w-full overflow-y-scroll">
 
-        <header class="hidden lg:block fixed h-full w-20 bg-orange-200/50 z-20">
+        <div id="menu-switch" class="absolute flex justify-center items-center bottom-5 left-5 h-20 w-20 bg-orange-50 rounded-2xl">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
 
+        <header class="hidden fixed bottom-5 lg:flex justify-center w-full z-20">
+            <nav class="flex space-x-5 px-5 text-center h-20 w-max bg-orange-50 rounded-2xl justify-center items-center">
+                <a href="#welcome" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Главная</a>
+                <a href="#section-one" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Информация о школе</a>
+                <a href="#section-two" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Информация о классе</a>
+                <a href="#section-three" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Мой любимый предмет</a>
+                <a href="#section-four" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">О разработчике</a>
+            </nav>
         </header>
 
         <section id="welcome" class="snap-center flex flex-col lg:flex-row items-center justify-center h-screen min-w-screen">
             <h1 class="max-w-4xl text-eva text-6xl lg:text-8xl text-center lg:text-right pb-10 lg:pr-10 lg:pb-0">
                 Добро пожаловать на сайт моей школы!
             </h1>
-            <nav class="flex flex-col space-y-5 p-5 rounded-xl bg-white/50">
+            <nav class="flex flex-col space-y-5 p-5 text-center rounded-xl bg-white/50">
                 <a href="#section-one" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Информация о школе</a>
                 <a href="#section-two" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Информация о классе</a>
                 <a href="#section-three" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Мой любимый предмет</a>
