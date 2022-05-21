@@ -1,0 +1,48 @@
+#welcome, #section-one, #section-two {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome {
+    background-image: url('../assets/welcome.jpg');
+}
+
+#section-one {
+    background-image: url('../assets/section-one.jpg');
+}
+
+#section-two {
+    background-image: url('../assets/section-two.jpg');
+}
+
+#section-three {
+    background-image: url('../assets/section-three.jpg');
+}
+
+#victor-medals {
+    border-collapse: unset;
+    border-spacing: 2vw;
+}
+
+::selection {
+    color: ghostwhite;
+    background: #f59e0b;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.main-cont {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main-cont::-webkit-scrollbar {
+    display: none;
+}

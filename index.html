@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+        @layer base {
+            .min-w-screen {
+                min-width: 100vw;
+            }
+
+            .text-raleway {
+                font-family: 'Raleway', sans-serif;
+            }
+
+            .text-lato {
+                font-family: 'Lato', sans-serif;
+            }
+
+            .text-eva {
+                font-family: 'Yeseva One', cursive;
+            }
+        }
+      </style>
+
+    <title>МБОУ СОШ №107</title>
+</head>
+
+<body class="overflow-hidden">
+    <main class="main-cont snap-mandatory scroll-smooth snap-x flex flex-row h-screen w-full overflow-y-scroll">
+
+        <header class="hidden lg:block fixed h-full w-20 bg-orange-200/50 z-20">
+
+        </header>
+
+        <section id="welcome" class="snap-center flex flex-col lg:flex-row items-center justify-center h-screen min-w-screen">
+            <h1 class="max-w-4xl text-eva text-6xl lg:text-8xl text-center lg:text-right pb-10 lg:pr-10 lg:pb-0">
+                Добро пожаловать на сайт моей школы!
+            </h1>
+            <nav class="flex flex-col space-y-5 p-5 rounded-xl bg-white/50">
+                <a href="#section-one" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Информация о школе</a>
+                <a href="#section-two" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Информация о классе</a>
+                <a href="#section-three" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Мой любимый предмет</a>
+            </nav>
+        </section>
+
+        <section id="section-one" class="snap-center flex flex-col items-center justify-center h-screen min-w-screen px-10">
+            <h2 class="text-eva text-4xl border-b-4 border-orange-200 w-max">Первый директор школы.</h2>
+            <p class="text-raleway text-center max-w-6xl text-md lg:text-2xl py-5">
+                Директор Кириллов Виктор Иванович возглавлял школу со дня ее открытия в 1981 г,
+                до выхода на заслуженный отдых в мае 2012 года. <br>
+                За годы его руководства школа достигла значительных результатов. По итогам соревнований между школами школа
+                неоднократно занимала призовые места в Ленинском районе. Это одна из школ, в которой спортивные классы существовали
+                со дня ее основания. Достигнуты значительные спортивные результаты, имеются мастера спорта, кандидаты в мастера спорта,
+                призеры регионального и мирового уровня.
+            </p>
+            <table id="victor-medals" class="w-full max-w-6xl border border-black rounded-xl">
+                <caption class="text-eva text-4xl border-b-4 border-orange-200 mb-5 mx-auto w-max">Награды Виктора Ивановича.</caption>
+                <tbody>
+                    <tr>
+                        <td class="text-raleway text-2xl">1986</td>
+                        <td class="text-raleway text-2xl">Вручен нагрудный знак «Отличник народного просвещения РФ».</td>
+                    </tr>
+                    <tr>
+                        <td class="text-raleway text-2xl">1998</td>
+                        <td class="text-raleway text-2xl">Присвоено звание «Заслуженный учитель РФ».</td>
+                    </tr>
+                    <tr>
+                        <td class="text-raleway text-2xl">2007</td>
+                        <td class="text-raleway text-2xl">Награжден памятной медалью «130 лет Барнаульской городской Думе».</td>
+                    </tr>
+                    <tr>
+                        <td class="text-raleway text-2xl">2008</td>
+                        <td class="text-raleway text-2xl">Медаль «За честное исполнение депутатского долга», награжден орденом Ломоносова за заслуги и большой вклад в развитие отечественного образования.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="section-two" class="snap-center flex flex-col justify-center items-center h-screen min-w-screen">
+            <h2 class="text-eva text-4xl border-b-4 border-orange-200 w-max">Мой класс.</h2>
+            <p class="text-raleway text-center max-w-2xl text-md lg:text-2xl py-5 mr-10">
+                Со своими одноклассниками я учился с 1 класса, и ни разу не менял школу
+                и класс в том числе. В основном я имел хорошие взаимоотношения со
+                всеми, или же нейтральные, но безусловно были и друзья. На следующей странице
+                вы найдёте информацию о моём классе.
+            </p>
+            <a href="./pages/myClass.html" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:text-white hover:scale-95 duration-300">Информация о моём классе</a>
+        </section>
+
+        <section id="section-three" class="snap-center flex flex-col justify-center items-center h-screen min-w-screen">
+            <h2 class="text-eva text-4xl border-b-4 border-orange-200 w-max">Мой любимый предмет.</h2>
+            <p class="text-raleway text-center max-w-2xl text-md lg:text-2xl py-5 mr-10">
+                
+            </p>
+            <a href="./pages/favSubject.html" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:text-white hover:scale-95 duration-300">Мой любимый предмет</a>
+        </section>
+
+    </main>
+
+    <script src="js/horizontal.js"></script>
+</body>
+</html>
