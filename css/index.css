@@ -28,6 +28,10 @@
     background-image: url('../assets/section-five.jpg');
 }
 
+#section-six {
+    background-image: url('../assets/bg.jpg');
+}
+
 #victor-medals {
     border-collapse: unset;
     border-spacing: 2vw;
@@ -56,4 +60,27 @@ html, body {
     overflow-y: hidden;
     overflow-x: scroll;
     scroll-behavior: smooth; 
+}
+
+.spinner {
+    -webkit-animation: spinning 100s linear infinite;
+    animation: spinning 100s linear infinite;
+}
+
+@-webkit-keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
