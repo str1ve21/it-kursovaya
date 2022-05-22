@@ -16,6 +16,8 @@ switcher.addEventListener('click', () => {
 
         svgX.classList.remove('opacity-0');
         svgX.classList.add('opacity-100');
+
+        switcherMenu.classList.remove('-z-50');
         return;
     };
 
@@ -29,6 +31,10 @@ switcher.addEventListener('click', () => {
 
         svgX.classList.remove('opacity-100');
         svgX.classList.add('opacity-0');
+
+        setTimeout(() => {
+            switcherMenu.classList.add('-z-50');
+        }, 300);
         return;
     };
 });
