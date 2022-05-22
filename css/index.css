@@ -24,6 +24,10 @@
     background-image: url('../assets/section-four.jpg');
 }
 
+#section-five {
+    background-image: url('../assets/section-five.jpg');
+}
+
 #victor-medals {
     border-collapse: unset;
     border-spacing: 2vw;
