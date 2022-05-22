@@ -39,14 +39,17 @@ html, body {
     overflow: hidden;
 }
 
-.main-cont {
-    overflow-y: hidden;
-    overflow-x: scroll;
-    scroll-behavior: smooth; 
+.scrollbar-none {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-.main-cont::-webkit-scrollbar {
+.scrollbar-none::-webkit-scrollbar {
     display: none;
+}
+
+.main-cont {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
 }
