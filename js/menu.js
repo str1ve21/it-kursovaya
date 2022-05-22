@@ -18,6 +18,7 @@ switcher.addEventListener('click', () => {
         svgX.classList.add('opacity-100');
 
         switcherMenu.classList.remove('-z-50');
+        switcherMenu.classList.add('z-20');
         return;
     };
 
@@ -33,6 +34,7 @@ switcher.addEventListener('click', () => {
         svgX.classList.add('opacity-0');
 
         setTimeout(() => {
+            switcherMenu.classList.remove('z-20');
             switcherMenu.classList.add('-z-50');
         }, 300);
         return;
