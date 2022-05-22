@@ -34,7 +34,7 @@
 </head>
 
 <body class="overflow-hidden">
-    <main class="main-cont scrollbar-none snap-mandatory scroll-smooth snap-x flex flex-row h-screen w-full overflow-y-scroll">
+    <main class="main-cont scrollbar-none snap-mandatory scroll-smooth snap-x flex flex-row h-screen w-full">
 
         <div id="menu-switch" class="absolute flex justify-center items-center bottom-2 left-2 lg:bottom-5 lg:left-5 h-10 w-10 lg:h-20 lg:w-20 bg-orange-50 border border-black rounded-2xl cursor-pointer z-30">
             <svg xmlns="http://www.w3.org/2000/svg" id="svg-stripe" class="absolute h-6 w-6 lg:h-12 lg:w-12 transition-opacity duration-300 opacity-100" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -46,8 +46,22 @@
             </svg>
         </div>
 
-        <div id="scrollbar-alert" class="">
+        <div id="scrollbar-alert" class="fixed mx-2 lg:mx-0 right-2 lg:right-5 top-2 lg:top-5 lg:w-max h-max p-2 lg:p-5 z-50 bg-orange-50 border border-black rounded-2xl transition-opacity duration-300 opacity-0">
+            <svg xmlns="http://www.w3.org/2000/svg" id="svg-alert-x" class="absolute right-2 top-2 lg:right-5 lg:top-5 h-8 w-8 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
 
+            <h2 class="text-eva text-xl lg:text-2xl border-b-4 border-orange-200 w-max">Функционал</h2>
+            <p class="text-raleway max-w-2xl text-sm lg:text-xl pt-5">
+                Здравствуйте, на данном сайте используется горизонтальный скролл страницы. 
+                Если по каким-то причинам он у вас не работает, вы можете включить scrollbar 
+                внизу страницы. Хотите его включить?
+            </p>
+
+            <div class="flex w-full h-max space-x-2 lg:space-x-5 mt-2 lg:mt-5">
+                <button id="scroll-off" class="text-raleway text-sm lg:text-md uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Нет, спасибо</button>
+                <button id="scroll-on" class="text-raleway text-sm lg:text-md uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Включить</button>
+            </div>
         </div>
 
         <header id="menu-nav" class="fixed bottom-2 lg:bottom-5 flex justify-center w-full z-20 transition-opacity duration-300 opacity-0">
@@ -141,5 +155,6 @@
 
     <script src="js/horizontal.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/scrollbarAlert.js"></script>
 </body>
 </html>
