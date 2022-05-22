@@ -1,0 +1,19 @@
+html, body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.main-cont {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+}

@@ -66,7 +66,7 @@
             </svg>
 
             <h2 class="text-eva text-xl lg:text-2xl border-b-4 border-orange-200 w-max">Функционал</h2>
-            <p class="text-raleway max-w-2xl text-sm lg:text-xl pt-5">
+            <p class="text-raleway max-w-2xl text-sm lg:text-xl pt-2 lg:pt-5">
                 Здравствуйте, на данном сайте используется горизонтальный скролл страницы. 
                 Если по каким-то причинам он у вас не работает, вы можете включить scrollbar 
                 внизу страницы. Хотите его включить?
@@ -178,12 +178,15 @@
             <a href="./pages/quiz.html" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:text-white hover:scale-95 duration-300">Тест</a>
         </section>
 
-        <section id="section-six" class="snap-center flex flex-col justify-center items-center h-screen min-w-screen">
+        <section id="section-six" class="snap-center relative flex flex-col justify-center items-center h-screen min-w-screen">
             <h2 class="text-raleway text-2xl lg:text-6xl uppercase border-b-4 border-orange-200 mb-5 text-center w-2/3 lg:w-max">
                 2022 / 9PS-11 / Оплачко м. н. / <br>
                 курсовая работа по информатике.
             </h2>
-            <img class="spinner h-64 w-64" src="./assets/circle-logo.png" alt="made by str1ve logo">
+            <div class="clickCont relative h-64 w-64">
+                <img class="spinner absolute h-64 w-64" src="./assets/circle-logo.png" alt="made by str1ve logo">
+                <img class="easter-egg absolute hidden h-64 w-64 rounded-full z-10" src="./assets/easter-egg.gif" alt="haha rainbow frog xddd // click 5 times to unlock it">
+            </div>
         </section>
 
     </main>
@@ -191,5 +194,6 @@
     <script src="js/horizontal.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/scrollbarAlert.js"></script>
+    <script src="js/easter.js"></script>
 </body>
 </html>
