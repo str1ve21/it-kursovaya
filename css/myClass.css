@@ -12,6 +12,10 @@
     background-image: url('../assets/bg.jpg');
 }
 
+#section-one p {
+    text-indent: 40px;
+}
+
 ::selection {
     color: ghostwhite;
     background: #f59e0b;
