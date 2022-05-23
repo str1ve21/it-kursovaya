@@ -8,9 +8,23 @@
     background-image: url('../assets/section-two.jpg');
 }
 
+#section-one, #section-two {
+    background-image: url('../assets/bg.jpg');
+}
+
+::selection {
+    color: ghostwhite;
+    background: #f59e0b;
+}
+
 html, body {
     scroll-behavior: smooth;
     overflow: hidden;
+}
+
+#class-table {
+    border-collapse: unset;
+    border-spacing: 2vw;
 }
 
 .scrollbar-none {

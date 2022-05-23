@@ -16,6 +16,14 @@
                 min-width: 100vw;
             }
 
+            .h-80vh {
+                height: 80vh;
+            }
+
+            .w-80vw {
+                width: 80vw;
+            }
+
             .text-raleway {
                 font-family: 'Raleway', sans-serif;
                 -webkit-font-feature-settings: "lnum";
@@ -55,19 +63,77 @@
                 <a href="../index.html" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Главная</a>
                 <a href="#welcome" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Добро пожаловать</a>
                 <a href="#section-one" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Краткая история</a>
+                <a href="#section-two" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Выпускной</a>
             </nav>
         </header>
 
         <section id="welcome" class="snap-center flex flex-col lg:flex-row items-center justify-center h-screen min-w-screen">
-            
+            <h1 class="max-w-4xl text-eva text-4xl lg:text-8xl text-center lg:text-right pb-5 px-5 lg:pr-10 lg:pb-0">
+                Мои одноклассники.
+            </h1>
+            <nav class="flex flex-col space-y-2 lg:space-y-5 p-5 lg:p-5 mr-5 text-center rounded-xl bg-white/50">
+                <a href="../index.html" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">На главную</a>
+                <a href="#section-one" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Краткая история</a>
+                <a href="#section-two" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Выпускной</a>
+            </nav>
         </section>
 
-        <section id="section-one" class="snap-center flex flex-col lg:flex-row items-center justify-center h-screen min-w-screen">
+        <section id="section-one" class="snap-center flex flex-col items-center justify-center h-screen min-w-screen px-10">
+            <h2 class="text-eva text-xl lg:text-4xl border-b-4 border-orange-200 text-center lg:text-left lg:w-max">Краткая история класса.</h2>
+            <p class="text-raleway text-center max-w-6xl text-sm lg:text-2xl py-5">
+                Со своим классом я учился с первого класса, и ни разу не менял школу и класс. Зато у нас часто появлялись
+                и уходили люди. Особенно это было заметно когда мы перешли в 5 класс, тогда пришло как минимум 5 человек и ушли 3.
+                В общем и целом, все одноклассники были интересны для общения, но я не старался и не хотел дружить с каждым. 
+                До 10 класса у меня было только 2 друга, один с 1 класса, а второй уже пришёл к нам в пятом. 
+                Уже в 10 классе всю парралель объеденили в 2 класса, и многие ушли после 9, поэтому коллектив сильно перемешался. 
+                Было интересно знакомиться с новыми людьми, и тогда я нашёл ещё 2 друзей, и начал общаться с будущей девушкой.
+                Конечно не всегда было только хорошее, но я не могу сказать, что мой класс (до 9) был плохим.
+            </p>
+            <table id="class-table" class="w-full max-w-6xl border border-black rounded-xl">
+                <caption class="text-eva text-xl lg:text-4xl border-b-4 border-orange-200 mb-5 mx-auto text-center w-max">Статистика друзей.</caption>
+                <tbody>
+                    <tr>
+                        <td class="text-raleway border-b border-black text-xs lg:text-2xl">Год</td>
+                        <td class="text-raleway border-b border-black text-xs lg:text-2xl">Количество друзей</td>
+                        <td class="text-raleway border-b border-black text-xs lg:text-2xl">Имена друзей</td>
+                    </tr>
+                    <tr>
+                        <td class="text-raleway text-xs lg:text-2xl">2010</td>
+                        <td class="text-raleway text-xs lg:text-2xl">1</td>
+                        <td class="text-raleway text-xs lg:text-2xl">Илья</td>
+                    </tr>
+                    <tr>
+                        <td class="text-raleway text-xs lg:text-2xl">2015</td>
+                        <td class="text-raleway text-xs lg:text-2xl">2</td>
+                        <td class="text-raleway text-xs lg:text-2xl">Илья, Рома</td>
+                    </tr>
+                    <tr>
+                        <td class="text-raleway text-xs lg:text-2xl">2020</td>
+                        <td class="text-raleway text-xs lg:text-2xl">4</td>
+                        <td class="text-raleway text-xs lg:text-2xl">Илья, Рома, Влад, Вадим</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
+        <section id="section-two" class="snap-center flex flex-col justify-center items-center h-screen min-w-screen">
+            <h2 class="text-eva text-4xl border-b-4 border-orange-200 text-center w-2/3 lg:w-max">Мой класс и 11"Б" на выпускном.</h2>
+            <div id="gallery" class="h-80vh flex justify-center items-center mt-2 lg:mt-5">
+                <svg id="gallery-img-minus" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 lg:mx-5 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+
+                <img id="gallery-image" class="h-full w-80vw object-cover rounded-2xl" loading="lazy" alt="Image gallery">
+
+                <svg id="gallery-img-plus" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 lg:mx-5 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
         </section>
     </main>
     
     <script src="../js/horizontal.js"></script>
     <script src="../js/menu.js"></script>
+    <script src="../js/gallery.js"></script>
 </body>
 </html>
