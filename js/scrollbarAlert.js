@@ -1,4 +1,3 @@
-const mainCont = document.querySelector('.main-cont');
 
 const scrollbarAlert = document.querySelector('#scrollbar-alert');
 const scrollbarSwitch = document.querySelector('#scroll-switch');
@@ -17,12 +16,14 @@ function closeAlert() {
 
 function removeScroll() {
     mainCont.classList.add('scrollbar-none');
+    sessionStorage.setItem('isScrollAdded', false);
     closeAlert();
     return;
 };
 
 function addScroll() {
     mainCont.classList.remove('scrollbar-none');
+    sessionStorage.setItem('isScrollAdded', true);
     closeAlert();
     return;
 };
@@ -42,7 +43,7 @@ alertAddScroll.addEventListener('click', addScroll);
 scrollbarSwitch.addEventListener('click', openAlert);
 
 const autoOpenAlert = setTimeout(() => {
-    if (window.innerWidth >= 1024) {
+    if (window.innerWidth >= 1024 && sessionStorage.getItem('isScrollAdded') === null) {
         openAlert();
     };
 }, 4000);
