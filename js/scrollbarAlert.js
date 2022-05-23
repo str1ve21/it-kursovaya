@@ -31,6 +31,7 @@ function openAlert() {
     scrollbarAlert.classList.remove('-z-50');
     scrollbarAlert.classList.remove('opacity-0');
     scrollbarAlert.classList.add('opacity-100');
+    scrollbarAlert.classList.add('z-50');
     clearTimeout(autoOpenAlert);
     return; 
 };

@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/myClass.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/favSubject.css">
     <script src="../js/tailwind.js"></script>
 
     <style type="text/tailwindcss">
@@ -23,10 +23,6 @@
                 font-feature-settings: "lnum";
             }
 
-            .text-lato {
-                font-family: 'Lato', sans-serif;
-            }
-
             .text-eva {
                 font-family: 'Yeseva One', cursive;
             }
@@ -34,7 +30,7 @@
       </style>
 
     <link rel="shortcut icon" href="../assets/circle-logo.png" type="image/x-icon">
-    <title>Любимый предмет</title>
+    <title>Мой любимый предмет</title>
 </head>
 <body>
 
@@ -50,20 +46,37 @@
             </svg>
         </div>
 
-        <header id="menu-nav" class="fixed bottom-2 lg:bottom-5 mx-14 lg:mx-28 flex justify-center z-20 transition-opacity duration-300 opacity-0">
+        <header id="menu-nav" class="fixed bottom-2 lg:bottom-5 mx-14 lg:mx-28 flex justify-center -z-50 transition-opacity duration-300 opacity-0">
             <nav class="flex flex-wrap items-center justify-center p-2 lg:px-5 text-center min-h-20 h-max bg-orange-50 border border-black rounded-2xl">
                 <a href="../index.html" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Главная</a>
                 <a href="#welcome" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Добро пожаловать</a>
-                <a href="#section-one" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Краткая история</a>
+                <a href="#section-one" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Сайтостроение</a>
             </nav>
         </header>
 
         <section id="welcome" class="snap-center flex flex-col lg:flex-row items-center justify-center h-screen min-w-screen">
-            
+            <h1 class="max-w-4xl text-eva text-4xl lg:text-8xl text-center lg:text-right pb-5 px-5 lg:pr-10 lg:pb-0">
+                Мой любимый предмет.
+            </h1>
+            <nav class="flex flex-col space-y-2 lg:space-y-5 p-5 lg:p-5 mr-5 text-center rounded-xl bg-white/50">
+                <a href="../index.html" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">На главную</a>
+                <a href="#section-one" class="text-raleway text-md lg:text-xl uppercase border border-black px-4 py-2 rounded-xl hover:bg-black hover:scale-95 hover:text-white duration-300">Сайтостроение</a>
+            </nav>
         </section>
 
-        <section id="section-one" class="snap-center flex flex-col lg:flex-row items-center justify-center h-screen min-w-screen">
-
+        <section id="section-one" class="snap-center flex flex-col items-center justify-center h-screen min-w-screen px-10">
+            <h2 class="text-eva text-xl lg:text-4xl border-b-4 border-orange-200 text-center lg:text-left lg:w-max">Уроки сайтостроения.</h2>
+            <p class="text-raleway text-justify max-w-6xl text-xs lg:text-2xl py-5">
+                В каждом предмете были интересные темы. Например, на биологии мне нравилось изучать органику, на истории - древнюю Грецию и Рим, а на физике - астрономию, но я всё равно не считал эти предметы любимыми.
+                <br>
+                Благодаря некоторым учителям, даже не особо интересный предмет мог нравиться, но он всё равно не становился от этого любимым. Пока в 10 классе учитель информатики не сказал нам в начале года, что скоро появится урок сайтостроения.
+                <br>
+                К тому моменту я уже хорошо знал основы, и даже немного больше, и поэтому мне было даже интересно, как и что нам будут преподавать.
+                <br>
+                Честно говоря, было не особо приятно писать код в тетради, или стили в HTML, но мне нравилось, что директор, который преподавал нам данный предмет, вместо заданий давал мне возможность помогать классу, и даже учить одноклассников.
+                <br>
+                Естественно, в конце года нам сказали сделать сайт с несколькими страницами. Я добавил туда jQuery, библиотеку для анимаций и много чего интересного, но в конце года мы ушли на дистант, и мой сайт никто так и не оценил, так как защита своей работы планировалась очно.
+            </p>
         </section>
     </main>
     
