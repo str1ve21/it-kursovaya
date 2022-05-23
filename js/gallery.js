@@ -9,7 +9,7 @@ let currentImg = 1;
 galleryImg.src = `../assets/${currentSiteFolder}/img1.webp`;
 
 function eventPlusImg() {
-    currentImg += 1;
+    currentImg++;
     if (currentImg === 5) {
         currentImg = 1;
     };
@@ -17,7 +17,7 @@ function eventPlusImg() {
 };
 
 function eventMinusImg() {
-    currentImg -= 1;
+    currentImg--;
     if (currentImg === 0) {
         currentImg = 4;
     };

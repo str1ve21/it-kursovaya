@@ -4,7 +4,7 @@ let clickedToEaster = 0;
 let isEaster = false;
 
 clickCont.addEventListener('click', () => {
-    clickedToEaster += 1;
+    clickedToEaster++;
     console.log(isEaster, clickedToEaster);
     if (clickedToEaster % 5 === 0 && isEaster === false) {
         isEaster = true;
