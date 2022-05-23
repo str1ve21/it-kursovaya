@@ -40,4 +40,8 @@ alertCloseBtn.addEventListener('click', removeScroll);
 alertAddScroll.addEventListener('click', addScroll);
 scrollbarSwitch.addEventListener('click', openAlert);
 
-const autoOpenAlert = setTimeout(openAlert, 4000);
+const autoOpenAlert = setTimeout(() => {
+    if (window.innerWidth >= 1024) {
+        openAlert();
+    };
+}, 4000);

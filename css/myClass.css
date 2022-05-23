@@ -1,3 +1,13 @@
+#welcome, #section-one, #section-two {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome {
+    background-image: url('../assets/section-two.jpg');
+}
+
 html, body {
     scroll-behavior: smooth;
     overflow: hidden;
