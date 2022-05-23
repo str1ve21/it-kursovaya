@@ -1,0 +1,47 @@
+#welcome, #section-one {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#welcome {
+    background-image: url('../assets/section-four.jpg');
+}
+
+#section-one {
+    background-image: url('../assets/bg.jpg');
+}
+
+#section-one p {
+    text-indent: 40px;
+}
+
+::selection {
+    color: ghostwhite;
+    background: #f59e0b;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+#class-table {
+    border-collapse: unset;
+    border-spacing: 2vw;
+}
+
+.scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+.main-cont {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+}
