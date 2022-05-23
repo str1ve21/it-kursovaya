@@ -1,11 +1,12 @@
 const mainCont = document.querySelector('.main-cont');
 
-let sessionStorageScrollData = sessionStorage.getItem('isScrollAdded');
+let isScrollAdded = sessionStorage.getItem('isScrollAdded');
+console.log(isScrollAdded)
 
-if (sessionStorageScrollData) {
+if (isScrollAdded === 'true') {
     mainCont.classList.remove('scrollbar-none');
 };
 
-if (sessionStorageScrollData === false) {
+if (isScrollAdded === 'false') {
     mainCont.classList.add('scrollbar-none');
 };

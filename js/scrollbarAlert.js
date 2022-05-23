@@ -11,21 +11,18 @@ function closeAlert() {
     setTimeout(() => {
         scrollbarAlert.classList.add('-z-50');
     }, 300);
-    return;
 };
 
 function removeScroll() {
     mainCont.classList.add('scrollbar-none');
-    sessionStorage.setItem('isScrollAdded', false);
+    sessionStorage.setItem('isScrollAdded', 'false');
     closeAlert();
-    return;
 };
 
 function addScroll() {
     mainCont.classList.remove('scrollbar-none');
-    sessionStorage.setItem('isScrollAdded', true);
+    sessionStorage.setItem('isScrollAdded', 'true');
     closeAlert();
-    return;
 };
 
 function openAlert() {
@@ -33,8 +30,7 @@ function openAlert() {
     scrollbarAlert.classList.remove('opacity-0');
     scrollbarAlert.classList.add('opacity-100');
     scrollbarAlert.classList.add('z-50');
-    clearTimeout(autoOpenAlert);
-    return; 
+    clearTimeout(autoOpenAlert); 
 };
 
 alertCloseSvg.addEventListener('click', closeAlert);
