@@ -73,17 +73,18 @@
         </section>
 
         <section id="section-one" class="snap-center flex flex-col items-center justify-center h-screen min-w-screen px-10">
-            <h2 class="text-eva text-4xl border-b-4 border-orange-200 text-center my-2 w-2/3 lg:w-max">Тест.</h2>
+            <h2 class="text-eva text-4xl border-b-4 border-orange-200 text-center my-2 w-max">Тест.</h2>
             
-            <div id="question-cont-1" class="relative h-max w-max bg-orange-100 rounded-2xl">
-                <h2 class="text-eva text-xl lg:text-4xl m-5 border-b-4 border-orange-200 text-center lg:text-left lg:w-max"><span id="question-num"></span></h2>
+            <div id="question-cont-1" class="relative h-max mx-2 bg-orange-100 rounded-2xl">
+                <h2 class="text-eva text-xl lg:text-4xl m-5 border-b-4 border-orange-200 text-center lg:text-left w-max"><span id="question-num"></span></h2>
                 <p id="question-text" class="text-raleway text-left text-xl lg:text-4xl mx-5"></p>
                 <div id="answer-cont" class="p-5 space-y-5">
                     
                 </div>
-                <div class="relative left-0 bottom-0 w-full h-max flex justify-center items-center">
+                <div class="relative left-0 bottom-0 w-full h-max flex flex-wrap-reverse lg:flex-wrap justify-center items-center">
                     <button id="before-button" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl disabled:bg-black disabled:text-white hover:bg-black hover:scale-95 hover:text-white duration-300" disabled>Назад</button>
                     <button id="next-button" class="text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl disabled:bg-black disabled:text-white hover:bg-black hover:scale-95 hover:text-white duration-300">Следующий вопрос</button>
+                    <button id="again-button" class="hidden text-raleway text-center text-md lg:text-xl uppercase border border-black px-4 py-2 m-2 rounded-xl disabled:bg-black disabled:text-white hover:bg-black hover:scale-95 hover:text-white duration-300">Пройти тест ещё раз</button>
                 </div>
             </div>
         </section>

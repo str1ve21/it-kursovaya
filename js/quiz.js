@@ -1,6 +1,7 @@
 const answerCont = document.querySelector('#answer-cont');
 const nextButton = document.querySelector('#next-button');
 const beforeButton = document.querySelector('#before-button');
+const againButton = document.querySelector('#again-button');
 let currentQuestion = 1;
 let correctAnswers = 0;
 
@@ -74,13 +75,25 @@ function finishTest() {
         nextButton.innerHTML = 'Результат';
     };
 
+    if (currentQuestion < questionTexts.length - 1) {
+        nextButton.innerHTML = 'Следующий вопрос';
+    };
+
     if (currentQuestion === questionTexts.length) {
         questionNum.innerHTML = 'Результат.';
         questionText.innerHTML = `Вы ответили правильно на ${correctAnswers} из ${currentQuestion - 1} вопросов.`;
         nextButton.classList.add('hidden');
-    } else {
-        nextButton.classList.remove('hidden');
+        beforeButton.classList.add('hidden');
+        againButton.classList.remove('hidden');
     };
+
+    if (currentQuestion < questionTexts.length) {
+        nextButton.classList.remove('hidden');
+        beforeButton.classList.remove('hidden');
+        againButton.classList.add('hidden');
+    };
+
+
 };
 
 function createRadio(massName) {
@@ -149,4 +162,13 @@ beforeButton.addEventListener('click', () => {
         createRadio(answerMass[`answ${currentQuestion}`]);
         finishTest();
     };
+});
+
+againButton.addEventListener('click', () => {
+    currentQuestion = 1;
+    correctAnswers = 0;
+    addQuetsionText(currentQuestion);
+    unlockBefore();
+    createRadio(answerMass[`answ${currentQuestion}`]);
+    finishTest();
 });
