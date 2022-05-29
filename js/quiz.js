@@ -92,8 +92,6 @@ function finishTest() {
         beforeButton.classList.remove('hidden');
         againButton.classList.add('hidden');
     };
-
-
 };
 
 function createRadio(massName) {
