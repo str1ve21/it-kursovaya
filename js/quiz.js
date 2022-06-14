@@ -155,6 +155,7 @@ nextButton.addEventListener('click', () => {
 beforeButton.addEventListener('click', () => {
     if (currentQuestion > 1) {
         currentQuestion--;
+        correctAnswers--;
         addQuetsionText(currentQuestion);
         unlockBefore();
         createRadio(answerMass[`answ${currentQuestion}`]);
